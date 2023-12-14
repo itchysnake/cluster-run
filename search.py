@@ -88,6 +88,8 @@ def google_search(q, num=10, stop=50, country="spain"):
     urls = [] # initialise check
     cifs = []
 
+    # NOTE: Generator object might not terminate based on "stop" -> gotta check if I need to add a break based on while, or if logic
+
     # Generator object from the search
     for url in search(q, num=num, stop=stop, country=country):
 
